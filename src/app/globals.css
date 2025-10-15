@@ -1,0 +1,160 @@
+/* Updated: 2025-10-15T16:31:39.513Z */
+/* Updated: 2025-10-15T16:31:35.986Z */
+/* Updated: 2025-10-15T16:15:45.962Z */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Sora:wght@300;400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.875rem;
+  --background: #f5e8d5;
+  --foreground: #2a1b0d;
+  --card: #fdf4e5;
+  --card-foreground: #2a1b0d;
+  --popover: #fdf1df;
+  --popover-foreground: #2a1b0d;
+  --primary: #d89a45;
+  --primary-foreground: #ffffff;
+  --secondary: #f4c17c;
+  --secondary-foreground: #2a1b0d;
+  --muted: #f3e2c9;
+  --muted-foreground: #9c866c;
+  --accent: #d89a45;
+  --accent-foreground: #2a1b0d;
+  --destructive: #c76a4d;
+  --border: #e5d4bc;
+  --input: #e5d4bc;
+  --ring: #d89a45;
+  --chart-1: #d89a45;
+  --chart-2: #f4c17c;
+  --chart-3: #b97a2c;
+  --chart-4: #6ca77c;
+  --chart-5: #c76a4d;
+  --sidebar: #fdf1df;
+  --sidebar-foreground: #2a1b0d;
+  --sidebar-primary: #d89a45;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f3e2c9;
+  --sidebar-accent-foreground: #2a1b0d;
+  --sidebar-border: #e5d4bc;
+  --sidebar-ring: #d89a45;
+}
+
+.dark {
+  --background: #2a1b0d;
+  --foreground: #f5e8d5;
+  --card: #3d2d1a;
+  --card-foreground: #f5e8d5;
+  --popover: #3d2d1a;
+  --popover-foreground: #f5e8d5;
+  --primary: #d89a45;
+  --primary-foreground: #2a1b0d;
+  --secondary: #f4c17c;
+  --secondary-foreground: #2a1b0d;
+  --muted: #4a3822;
+  --muted-foreground: #9c866c;
+  --accent: #d89a45;
+  --accent-foreground: #f5e8d5;
+  --destructive: #c76a4d;
+  --border: #5a4530;
+  --input: #5a4530;
+  --ring: #d89a45;
+  --chart-1: #d89a45;
+  --chart-2: #f4c17c;
+  --chart-3: #b97a2c;
+  --chart-4: #6ca77c;
+  --chart-5: #c76a4d;
+  --sidebar: #3d2d1a;
+  --sidebar-foreground: #f5e8d5;
+  --sidebar-primary: #d89a45;
+  --sidebar-primary-foreground: #2a1b0d;
+  --sidebar-accent: #4a3822;
+  --sidebar-accent-foreground: #f5e8d5;
+  --sidebar-border: #5a4530;
+  --sidebar-ring: #d89a45;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sora', 'Inter', sans-serif;
+    font-weight: 700;
+  }
+  
+  .gradient-thailand {
+    background: linear-gradient(135deg, #d89a45 0%, #f4c17c 50%, #b97a2c 100%);
+  }
+  
+  .gradient-text {
+    background: linear-gradient(135deg, #d89a45 0%, #b97a2c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .glass-effect {
+    background: rgba(253, 241, 223, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(229, 212, 188, 0.5);
+  }
+  
+  .dark .glass-effect {
+    background: rgba(42, 27, 13, 0.8);
+    border: 1px solid rgba(90, 69, 48, 0.5);
+  }
+}
+
+/* Hide Next.js error overlay portal */
+nextjs-portal {
+  display: none !important;
+}
