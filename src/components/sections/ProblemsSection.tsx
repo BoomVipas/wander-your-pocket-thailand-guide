@@ -1,6 +1,6 @@
 "use client";
 
-import { AlertTriangle, Wallet, MessageSquare, MapPin, Layers } from "lucide-react";
+import { AlertTriangle, MessageSquare, MapPin, Layers } from "lucide-react";
 import PainPointCard from "@/components/PainPointCard";
 
 const painPoints = [
@@ -9,12 +9,6 @@ const painPoints = [
     problem: "Safety and security concerns plague tourists in Thailand. From taxi scams to road accidents, visitors face constant threats.",
     solution: "Wander provides real-time safety alerts, scam detection AI, verified transportation booking, and one-touch emergency access to tourist police with GPS tracking.",
     stats: "48% of tourist complaints involve scams",
-  },
-  {
-    icon: Wallet,
-    problem: "Payment nightmares: ATMs only give 1,000 baht notes that vendors refuse. Foreigners can't access Thai QR payment systems, forcing risky cash dependence.",
-    solution: "Integrated tourist QR payment through TAGTHAi Easy Pay partnership. Multi-currency wallet, bill splitting, and real-time exchange rate optimization.",
-    stats: "100% of tourists excluded from PromptPay",
   },
   {
     icon: MessageSquare,
