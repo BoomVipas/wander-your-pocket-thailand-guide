@@ -1,6 +1,6 @@
 "use client";
 
-import { AlertTriangle, Wallet, MessageSquare, MapPin, Wifi, Layers } from "lucide-react";
+import { AlertTriangle, Wallet, MessageSquare, MapPin, Layers } from "lucide-react";
 import PainPointCard from "@/components/PainPointCard";
 
 const painPoints = [
@@ -27,12 +27,6 @@ const painPoints = [
     problem: "Transportation chaos: Severe traffic, taxi meter refusals, unreliable public transport info, and left-side driving confusion for tourists.",
     solution: "Smart multi-modal route planning with BTS, MRT, buses, and verified taxis. Real-time traffic updates with alternative routes and safety ratings.",
     stats: "Thailand has one of world's highest road fatality rates",
-  },
-  {
-    icon: Wifi,
-    problem: "Connectivity gaps on islands and remote areas. Slow WiFi, high roaming charges, and complex local SIM card processes requiring documentation.",
-    solution: "Built-in eSIM marketplace for easy data plan activation. WiFi finder with speed ratings, offline maps for key areas, and 24/7 tech support.",
-    stats: "Limited reliable internet in popular tourist islands",
   },
   {
     icon: Layers,
