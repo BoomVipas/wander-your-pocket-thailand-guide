@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Star, Download, Smartphone, ArrowRight, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -45,26 +46,27 @@ export default function DownloadSection() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Main CTA Section */}
-        <div className="text-center mb-20">
+        {/* Main CTA Section with App Preview */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+          {/* Left: CTA Content */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl md:text-6xl font-bold mb-6">
               Ready to Explore Thailand Like Never Before?
             </h2>
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-gray-300 mb-8">
               Join thousands of travelers and locals who've made Wander their go-to guide. 
               Download now and start your adventure!
             </p>
 
             {/* App Store Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+            <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <Button asChild size="lg" className="bg-white text-[#2a1b0d] hover:bg-gray-100 font-semibold text-lg px-8 py-7 text-left">
-                <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://apps.apple.com/th/app/wander-thailand/id6754048462" target="_blank" rel="noopener noreferrer">
                   <div className="flex items-center">
                     <Smartphone className="w-6 h-6 mr-3" />
                     <div>
@@ -90,6 +92,31 @@ export default function DownloadSection() {
             <p className="text-sm text-gray-400">
               ✅ Free Forever • ✅ No Credit Card Required • ✅ Available Now
             </p>
+          </motion.div>
+
+          {/* Right: App Screenshot */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="flex justify-center lg:justify-end"
+          >
+            <div className="relative">
+              {/* Phone Frame Effect */}
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border-8 border-gray-800 bg-gray-900 max-w-sm">
+                <Image
+                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/S__66191379-1761721703700.jpg"
+                  alt="Wander App Interface - Bangkok Map View"
+                  width={400}
+                  height={866}
+                  className="w-full h-auto"
+                  priority
+                />
+              </div>
+              {/* Glow Effect */}
+              <div className="absolute -inset-4 bg-gradient-to-r from-[#d89a45] to-[#f4c17c] opacity-20 blur-3xl -z-10" />
+            </div>
           </motion.div>
         </div>
 
@@ -160,10 +187,10 @@ export default function DownloadSection() {
 
           {/* Final CTA */}
           <Button asChild size="lg" className="gradient-thailand text-white font-semibold text-xl px-12 py-8 hover:shadow-2xl transition-all group">
-            <Link href="#download">
+            <a href="https://apps.apple.com/th/app/wander-thailand/id6754048462" target="_blank" rel="noopener noreferrer">
               Create Your Trip Now
               <ArrowRight className="w-6 h-6 ml-2 group-hover:translate-x-2 transition-transform" />
-            </Link>
+            </a>
           </Button>
         </motion.div>
       </div>

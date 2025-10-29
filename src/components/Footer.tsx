@@ -32,8 +32,8 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2 text-gray-300">
                 <Mail className="w-4 h-4" />
-                <a href="mailto:Wanderwhere@gmail.com" className="text-sm hover:text-white transition-colors">
-                  Wanderwhere@gmail.com
+                <a href="mailto:Wanderwheree@gmail.com" className="text-sm hover:text-white transition-colors">
+                  Wanderwheree@gmail.com
                 </a>
               </div>
             </div>
