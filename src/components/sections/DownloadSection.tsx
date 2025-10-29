@@ -106,7 +106,7 @@ export default function DownloadSection() {
               {/* Phone Frame Effect */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-8 border-gray-800 bg-gray-900 max-w-sm">
                 <Image
-                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/S__66191379-1761721703700.jpg"
+                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/S__66191380-1761722014584.jpg"
                   alt="Wander App Interface - Bangkok Map View"
                   width={400}
                   height={866}
